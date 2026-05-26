@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #Prompt that displays all the listening ports
 
-netstat -tulnp | grep LISTEN
+netstat -tulpn
+netstat -lxpn
