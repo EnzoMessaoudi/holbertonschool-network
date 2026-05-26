@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays all active IPv4 addresses (excluding loopback)
+# Displays all active IPv4 addresses
 
-ip -o -4 addr show up scope global | awk '{print $4}' | cut -d/ -f1
+ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
