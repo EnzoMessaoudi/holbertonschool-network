@@ -1,1 +1,4 @@
+#!/usr/bin/env bash
+#Prompt that displays all the listening ports
+
 netstat -tulp
