@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Displays all active IPv4 addresses (excluding loopback)
 
 ip -o -4 addr show up scope global | awk '{print $4}' | cut -d/ -f1
